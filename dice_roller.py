@@ -1,7 +1,7 @@
 import random
 import sys
 
-def diceroller(dice):
+def diceRoller(dice):
     dice = dice.split('d')
     diceNumber = int(dice[0])
     diceSides = int(dice[1])
@@ -15,4 +15,4 @@ def diceroller(dice):
     return f"{diceSum}: {' '.join(diceRolls)}"
 
 for arg in sys.argv[1:]:
-    print(diceroller(arg))
+    print(diceRoller(arg))
